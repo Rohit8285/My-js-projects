@@ -1,0 +1,125 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;700;&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-image: linear-gradient(to right, #8360c3, #2ebf91);
+}
+.container{
+    background-color: #fff;
+    box-shadow: 20px 20px 10px rgba(0, 0,0, 0.2);
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    max-width: 600px;
+    border-radius: 10px;
+    padding: 20px;
+}
+h1{
+    font-family: 'Lobster',"cursive";
+    font-size: 45px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+form input[type="text"]{
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 60%;
+    border-radius: 10px;
+}
+form input[type="submit"]{
+    background-color: rgb(97, 55, 251);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+    margin-left: 20px;
+    transition: .3s ease;
+}
+
+form input[type="submit"]:hover{
+    background-color: rgb(245, 9, 9);
+}
+.icon img{
+    width:100px;
+    height:100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.temperature{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.description{
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Pacifico';
+}
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.details > div{
+    font-family: 'Alkatra', cursive;
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin: 10px;
+    flex: 1;
+    border-radius: 5px;
+    text-align: center;
+    min-height: 45px;
+}
+/* min width means 820px se jayda walo par yeh property work kregi
+max width means 768px se kam walo par yeh property work kregi */
+
+@media (min-width:820px) {
+    input{
+        margin-left: 10px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width:768px){
+    form{
+        flex-direction: column;
+    }
+    form input[type="text"]{
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width:414px) {
+    .container{
+        margin:60px 20px auto 20px;
+        padding: 10px;
+    }
+    form input[type="text"]{
+        width: 90%;
+        margin-bottom: 10px;
+        border-radius: 8px;
+    }
+}
