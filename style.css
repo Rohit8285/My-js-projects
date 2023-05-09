@@ -91,8 +91,6 @@ form input[type="submit"]:hover{
     text-align: center;
     min-height: 45px;
 }
-/* min width means 820px se jayda walo par yeh property work kregi
-max width means 768px se kam walo par yeh property work kregi */
 
 @media (min-width:820px) {
     input{
